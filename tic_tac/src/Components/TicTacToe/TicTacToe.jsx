@@ -1,5 +1,5 @@
 import React from 'react';
-import './TicTacToe.css';
+import './TicTacTeo.css';
 import circle_icon from '../Assets/circle.jpg';
 import cross_icon from '../Assets/cross.jpg';
 import { useRef, useState } from 'react';
@@ -68,10 +68,10 @@ let data =["","","","","","","","",""];
     const won  =(winner) =>{
         setLock(true);
         if(winner==="x"){
-            titleRef.current.innerHTML='Congratulations! :<img src =${cross_icon}>wins';
+            titleRef.current.innerHTML= `Congratulation! <img src="${cross_icon}" alt="circle">wins`;
         }
         else{
-            titleRef.current.innerHTML='Congratulations! :<img src =${circle_icon}>wins';
+            titleRef.current.innerHTML=`Congratulation! <img src="${circle_icon}" alt="circle">wins`;
         }
     }
     const reset =() =>{
